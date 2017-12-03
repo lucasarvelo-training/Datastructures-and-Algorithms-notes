@@ -37,7 +37,8 @@ This is the internal of the loop. Printing x always takes the same amount of tim
 Combining the loop and it's internal we find that our small algorithm has $O(n) {\times} O(1) = O(n)$ time complexity. 
 
 A better way to show this is this:
-$$T= \Sigma_{i=1}^n IL = \Sigma_{i=1}^n 1 = O(n) $$Where $T$ is the time complexity and $IL$ is the time complexity of inner loop.
+$T= \Sigma_{i=1}^n IL = \Sigma_{i=1}^n 1 = O(n)$
+Where $T$ is the time complexity and $IL$ is the time complexity of inner loop.
 
 This algorithm has total time complexity $O(1)+O(n) = O(n+1)$.
 Similarly to finding the limit of a function, big-O notation allows us to ignore constant numbers as they don't alter time complexity relative to the amount of elements. Moreover, multiplication constants are considered irrelevant in the grand scheme of things and are only to be considered when comparing algorithms with the same time complexity and in very time sensitive/critical applications.

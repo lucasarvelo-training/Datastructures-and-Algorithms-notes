@@ -40,7 +40,7 @@ This is the internal of the loop. Printing x always takes the same amount of tim
 Combining the loop and it's internal we find that our small algorithm has <img src="https://latex.codecogs.com/gif.latex?O(n)%20{&#x5C;times}%20O(1)%20=%20O(n)"/> time complexity. 
   
 A better way to show this is this:
-<p align="center"><img src="https://latex.codecogs.com/gif.latex?T=%20&#x5C;Sigma_{i=1}^n%20IL%20=%20&#x5C;Sigma_{i=1}^n%201%20=%20O(n)"/></p>  
+<img src="https://latex.codecogs.com/gif.latex?T=%20&#x5C;Sigma_{i=1}^n%20IL%20=%20&#x5C;Sigma_{i=1}^n%201%20=%20O(n)"/>
 Where <img src="https://latex.codecogs.com/gif.latex?T"/> is the time complexity and <img src="https://latex.codecogs.com/gif.latex?IL"/> is the time complexity of inner loop.
   
 This algorithm has total time complexity <img src="https://latex.codecogs.com/gif.latex?O(1)+O(n)%20=%20O(n+1)"/>.
