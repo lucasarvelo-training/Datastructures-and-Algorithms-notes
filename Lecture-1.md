@@ -54,10 +54,10 @@ ___
   
   
 ```python
-    max_value = l[0]
-    for i in l:
-        if max_value <i:
-            max_value = i
+max_value = l[0]
+for i in l:
+    if max_value <i:
+        max_value = i
 ```
   
 ##### Inside the loop
@@ -88,9 +88,9 @@ Suppose, instead of a randomized loop, we had an ascending sorted list. Instead 
   
 Example 2:
 ```python
-    for i in range(n):
-        for j in range(i*i):
-            sum++
+for i in range(n):
+    for j in range(i*i):
+        sum++
 ```
   
 |operation| time complexity|
