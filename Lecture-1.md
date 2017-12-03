@@ -24,26 +24,18 @@ Big-O notation allows us to define an upper, a lower and an absolute bound to th
 ### Examples:
   
   
-    i <- 0
-    while(i < N)
-        print i
-        i++
-  
-  
-This takes constant time, meaning that it always takes the same amount of time regardless of the size of our elements.
-  
-    i <- 0
-  
-Lets analyse the loop.
-  
-    while(i < N)
-        print i
+```python
+for x in range(n)
+    print(x)
+```
   
 The loop repeats for  N times thus the loop has time complexity of <img src="https://latex.codecogs.com/gif.latex?O(n)%20&#x5C;times"/> internal time complexity.
   
-    print i
+```python
+    print(x)
+```
   
-This is the internal of the loop. Printing i always takes the same amount of time thus the internal of the loop is <img src="https://latex.codecogs.com/gif.latex?O(1)"/>.
+This is the internal of the loop. Printing x always takes the same amount of time thus the internal of the loop is <img src="https://latex.codecogs.com/gif.latex?O(1)"/>.
   
 Combining the loop and it's internal we find that our small algorithm has <img src="https://latex.codecogs.com/gif.latex?O(n)%20{&#x5C;times}%20O(1)%20=%20O(n)"/> time complexity. 
   
@@ -51,7 +43,7 @@ A better way to show this is this:
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?T=%20&#x5C;Sigma_{i=1}^n%20IL%20=%20&#x5C;Sigma_{i=1}^n%201%20=%20O(n)"/></p>  
 Where <img src="https://latex.codecogs.com/gif.latex?T"/> is the time complexity and <img src="https://latex.codecogs.com/gif.latex?IL"/> is the time complexity of inner loop.
   
-This algorithm has total time complexity ``<img src="https://latex.codecogs.com/gif.latex?O(1)+O(n)%20=%20O(n+1)"/>.``
+This algorithm has total time complexity <img src="https://latex.codecogs.com/gif.latex?O(1)+O(n)%20=%20O(n+1)"/>.
 Similarly to finding the limit of a function, big-O notation allows us to ignore constant numbers as they don't alter time complexity relative to the amount of elements. Moreover, multiplication constants are considered irrelevant in the grand scheme of things and are only to be considered when comparing algorithms with the same time complexity and in very time sensitive/critical applications.
   
 Thus we can say that this algorithm is <img src="https://latex.codecogs.com/gif.latex?{O(n)}"/>.
@@ -61,11 +53,12 @@ ___
 #### Finding the biggest element in a list
   
   
-    l <- list
-    max <- list[0]
-    for ( i = 1, i < size(l), i++ )
-        if max < l [i]
-            max = l [i]
+```python
+    max_value = l[0]
+    for i in l:
+        if max_value <i:
+            max_value = i
+```
   
 ##### Inside the loop
   
@@ -88,17 +81,17 @@ Thus the algorithm is <img src="https://latex.codecogs.com/gif.latex?{O(n)}"/> a
   
 Suppose, instead of a randomized loop, we had an ascending sorted list. Instead of iterating over the list in <img src="https://latex.codecogs.com/gif.latex?{&#x5C;Theta(n)}"/> and getting the biggest element we can simply get the last element <img src="https://latex.codecogs.com/gif.latex?{&#x5C;Theta(1)}"/> as such.
   
-    max <- last(l)
+```python
+    max_val = l[len(l)-1] 
+```
   
-Or
-  
-    max <- l[size(l)-1]
   
 Example 2:
-  
-    for( i = 0, i < n, i++ )
-        for ( j = 0, j < i*i , j++)
+```python
+    for i in range(n):
+        for j in range(i*i):
             sum++
+```
   
 |operation| time complexity|
 |-|-|
