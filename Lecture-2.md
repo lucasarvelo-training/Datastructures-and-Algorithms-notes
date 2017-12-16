@@ -48,18 +48,18 @@ OL = <img src="https://latex.codecogs.com/gif.latex?&#x5C;Sigma_{i=0}^{n-1}%20IL
 ### Example 4
   
   
-    for ( i<-1 , i <= n, i*=2 )
-        for (j = 0, j< n , j++ )
+    for ( i = 1 ; i <= n ; i*=2 )
+        for (j = 0 ; j< n ; j++ )
             sum++
-<img src="https://latex.codecogs.com/gif.latex?IL%20=%20&#x5C;Sigma_{j&#x5C;in%20n}1%20=%20n"/>
-<img src="https://latex.codecogs.com/gif.latex?OL%20=%20&#x5C;Sigma_{i%20=%201}^{log_{2}n}%20IL%20=%20n%20*%20log_2n"/> <img src="https://latex.codecogs.com/gif.latex?&#x5C;to%20&#x5C;Theta(nlogn)"/>
+<img src="https://latex.codecogs.com/gif.latex?IL%20=%20&#x5C;Sigma_{j&#x5C;in%20n}1%20=%20n"/>  
+<img src="https://latex.codecogs.com/gif.latex?OL%20=%20&#x5C;Sigma_{i%20=%201}^{log_{2}n}%20IL%20=%20n%20*%20log_2n"/> <img src="https://latex.codecogs.com/gif.latex?&#x5C;to%20&#x5C;Theta(nlogn)"/>  
   
 ### Example 5
   
   
-    for ( i < 1, i < n, i++ )
+    for ( i = 1; i < n; i++ )
         if ( n%2 == 0 )
-            for ( j = 0, j < n, j++ )
+            for ( j = 0; j < n; j++ )
                 sum++
         else
             sum--
