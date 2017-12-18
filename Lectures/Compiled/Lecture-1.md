@@ -101,11 +101,11 @@ for (int index = 0;index < n; index++)
   
 | operation|Time Complexity |
 |--------|------------------|
-|```for (int index = 0; index < n; index++)```| $\Sigma_{i=1}^n 1 = O(n) $|
+|```for (int index = 0; index < n; index++)```| $\Sigma_{i=1}^n 1 = O(n)$|
   
 Thus the algorithm is $O(n)$ and $\Omega(n)$ therefor, is also $\Theta(n)$.
   
-Suppose, instead of a randomized loop, we had an ascending sorted list. Instead of iterating over the list in ${\Theta(n)}$ and getting the biggest element we can simply get the last element in ${\Theta(1)}$ as such.
+Suppose, instead of a randomized loop, we had an ascending sorted list. Instead of iterating over the list in ${\Theta(n)}$ and getting the biggest element we can simply get the last element in $\Theta(1)$ as such.
   
 ```C
     int max_val = array[n-1]
