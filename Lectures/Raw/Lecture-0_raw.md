@@ -38,14 +38,14 @@ And you are tasked to sort them.
 
 The simplest way to do this is by beginning from the start and go towards the end picking the biggest number we find and putting it in the end, the next number we find is put each time before the previous we placed.
 
-Bubblesort has $${O(n^2)}$$ time complexity. This means that at most, the algorithm has to make comparisons in the order of $n^2$ where $n$ is the amount of elements in the dataset.
+Bubblesort has $${O(n^2)}$$ time complexity. This means that at most, the algorithm has to make comparisons in the order of $${n^2}$$ where _n_ is the amount of elements in the dataset.
 
-In this scenario, we have to do comparisons in the order of $$1,000,000 ^ 2 = 1,000,000,000,000 = 10^{12} = 1 trillion$$.
+In this scenario, we have to do comparisons in the order of $$1,000,000 ^ 2 = 1,000,000,000,000 = 10^{12} = 1 trillion$$
 
 A more efficient algorithm is mergesort. In mergesort, the array is split into smaller and smaller segments until segment of size 1. Then recursively merge the segments into bigger, sorted segments.
 
 Mergesort has $${O(n \times log_2n)}$$ time complexity, thus, the worst case of mergesort in this scenario requires comparisons in the order of  
-$${1,000,000 \times log_21,000,000 = 10^6*19.931569 = 10^7*2} = 200 million $$ .
+$${1,000,000 \times log_21,000,000 = 10^6*19.931569 = 10^7*2} = 200 million $$
 
 An even faster way is using bucket sort. Bucketsort counts how many times each value is found within the array and then recreates the array sorted. 
 
