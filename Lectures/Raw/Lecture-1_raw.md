@@ -96,7 +96,7 @@ for i in range(n):
 
 |i | 0 | 1 | 2 | 3| ...| n-1|
 |-|-|-|-|-|-|-|-|
-|IL|0|1|4|9| ... | ${(n-1)^2}$
+|IL|0|1|4|9| ... | ${(n-1)^2}$|
 
 Thus, this double loop has ${\Theta(n*(n^2+2+1))=\Theta(N^3)}$ time complexity.
 
@@ -109,7 +109,7 @@ When we use big-O notation:
 * Only the function of the highest order is kept and the others are discarded.
 * Environmental and other factors are ignored
 
-![Big-O-chart](./images/big-O-chart.png)
+![Big-O-chart](../../images/big-O-chart.png)
 
 ## Non algorithmic examples of Big-O-notation
 
@@ -133,7 +133,3 @@ When designing or analysing an algorithm, we often focus on worst case scenario 
 ## Worst Case
 
 Let $D_n$ the possible combinations of all elements, $t(I)$ the number of basic operations for every $i \in D_n$. Thus the runtime of worse case is equal  to $max \{ t(I) | I \in D_n\}$.
-
-## Calculating the average case
-
-Suppose we have a probability **${p(I)}$** for each case ${I\in D_n}$. The average case for an algorithm equals to $${\Sigma_{i\in D_n} p(I) \times t(I)} $$

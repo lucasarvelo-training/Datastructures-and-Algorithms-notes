@@ -103,7 +103,7 @@ for i in range(n):
   
 |i | 0 | 1 | 2 | 3| ...| n-1|
 |-|-|-|-|-|-|-|-|
-|IL|0|1|4|9| ... | <img src="https://latex.codecogs.com/gif.latex?{(n-1)^2}"/>
+|IL|0|1|4|9| ... | <img src="https://latex.codecogs.com/gif.latex?{(n-1)^2}"/>|
   
 Thus, this double loop has <img src="https://latex.codecogs.com/gif.latex?{&#x5C;Theta(n*(n^2+2+1))=&#x5C;Theta(N^3)}"/> time complexity.
   
@@ -117,7 +117,7 @@ When we use big-O notation:
 * Only the function of the highest order is kept and the others are discarded.
 * Environmental and other factors are ignored
   
-![Big-O-chart](./images/big-O-chart.png )
+![Big-O-chart](../../images/big-O-chart.png )
   
 ## Non algorithmic examples of Big-O-notation
   
@@ -144,10 +144,4 @@ When designing or analysing an algorithm, we often focus on worst case scenario 
   
   
 Let <img src="https://latex.codecogs.com/gif.latex?D_n"/> the possible combinations of all elements, <img src="https://latex.codecogs.com/gif.latex?t(I)"/> the number of basic operations for every <img src="https://latex.codecogs.com/gif.latex?i%20&#x5C;in%20D_n"/>. Thus the runtime of worse case is equal  to <img src="https://latex.codecogs.com/gif.latex?max%20&#x5C;{%20t(I)%20|%20I%20&#x5C;in%20D_n&#x5C;}"/>.
-  
-## Calculating the average case
-  
-  
-Suppose we have a probability **<img src="https://latex.codecogs.com/gif.latex?{p(I)}"/>** for each case <img src="https://latex.codecogs.com/gif.latex?{I&#x5C;in%20D_n}"/>. The average case for an algorithm equals to <p align="center"><img src="https://latex.codecogs.com/gif.latex?{&#x5C;Sigma_{i&#x5C;in%20D_n}%20p(I)%20&#x5C;times%20t(I)}"/></p>  
-  
   
