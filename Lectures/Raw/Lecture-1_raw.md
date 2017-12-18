@@ -2,6 +2,7 @@
 
 ___
 Contents:
+
 * [Complexity Analysis](#complexity-analysis)
   * [Examples](#examples)
 * [Summary](#summarizing)
@@ -9,6 +10,7 @@ Contents:
 * [Properties of big O](#properties-of-big-o)
 * [Worst case](#worst-case)
   * [Data Permutations](#data-permutations-and-worst-case-scenario)
+
 ___
 
 ## Complexity Analysis
@@ -73,57 +75,28 @@ Moreover, multiplications of constants are considered irrelevant in the grand sc
 Thus we can say that this algorithm is ${O(n)}$.
 
 This algorithm is also $\Omega(n)$ because it will ***always*** run for $n$ times. As a result, we say that the algorithm has $\Theta(n)$ time complexity.
-___
 
-#### Finding the biggest element in an array
-
-```C
-int max = array[0];
-for (int index = 0;index < n; index++)
-    if (max < array[index])
-        max = array[index];
-```
-
-##### Inside the loop
-
-|operation|time complexity|
-|---------|---------------|
-|if (max < array[index]) | $O(1)$ |
-|max = array[index] |$O(1)$ |
-
-##### All operations
-
-| operation|Time Complexity |
-|--------|------------------|
-|```for (int index = 0; index < n; index++)```| $\Sigma_{i=1}^n 1 = O(n)$|
-
-Thus the algorithm is $O(n)$ and $\Omega(n)$ therefor, is also $\Theta(n)$.
-
-Suppose, instead of a randomized loop, we had an ascending sorted list. Instead of iterating over the list in ${\Theta(n)}$ and getting the biggest element we can simply get the last element in $\Theta(1)$ as such.
-
-```C
-    int max_val = array[n-1]
-```
-
-Example 2:
+Example:
 
 ```python
 sum = 0
 for i in range(n):
     for j in range(i*i):
-        sum++
+        sum+=1
 ```
+
+#### Inner Loop
+
+|i | 0 | 1 | 2 | 3| ...| n-1|
+|-|-|-|-|-|-|-|
+|IL|0|1|4|9| ... | ${(n-1)^2}$|
+
+#### Total
 
 |operation| time complexity|
 |-|-|
 |Outer loop|${\Sigma_{i=1}^nInnerLoop}$|
 |InnerLoop|${\Sigma_{j=1}^{i^2}1}$|
-
-##### Inner Loop
-
-|i | 0 | 1 | 2 | 3| ...| n-1|
-|-|-|-|-|-|-|-|
-|IL|0|1|4|9| ... | ${(n-1)^2}$|
 
 Thus, this double loop has ${\Theta(n*n^2)=\Theta(n^3)}$ time complexity.
 
