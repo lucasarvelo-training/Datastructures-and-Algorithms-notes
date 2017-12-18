@@ -122,7 +122,7 @@ When we use big-O notation:
 * ${O(X*Y) = O(X)*O(Y) \in O(X*Y)}$
 * ${O(cX) = O(X)}$
 
-Let f(n) = ${16*n+20n^2 + 3logn + 8} = O(n + n^2 +logn +8) = O(n + n^2 + logn) = O(n^2) $
+Let f(n) = ${16*n+20n^2 + 3logn + 8 = O(n + n^2 +logn +8) = O(n + n^2 + logn) = O(n^2) }$
 
 While O defines an upper bound, it's important for our bounds to be as tight as possible in order to have better accuracy.
 

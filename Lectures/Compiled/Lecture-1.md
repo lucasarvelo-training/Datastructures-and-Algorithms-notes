@@ -132,7 +132,7 @@ When we use big-O notation:
 * <img src="https://latex.codecogs.com/gif.latex?{O(X*Y)%20=%20O(X)*O(Y)%20&#x5C;in%20O(X*Y)}"/>
 * <img src="https://latex.codecogs.com/gif.latex?{O(cX)%20=%20O(X)}"/>
   
-Let f(n) = <img src="https://latex.codecogs.com/gif.latex?{16*n+20n^2%20+%203logn%20+%208}%20=%20O(n%20+%20n^2%20+logn%20+8)%20=%20O(n%20+%20n^2%20+%20logn)%20=%20O(n^2)"/>
+Let f(n) = <img src="https://latex.codecogs.com/gif.latex?{16*n+20n^2%20+%203logn%20+%208%20=%20O(n%20+%20n^2%20+logn%20+8)%20=%20O(n%20+%20n^2%20+%20logn)%20=%20O(n^2)%20}"/>
   
 While O defines an upper bound, it's important for our bounds to be as tight as possible in order to have better accuracy.
   
