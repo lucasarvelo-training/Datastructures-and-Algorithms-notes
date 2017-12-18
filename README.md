@@ -6,7 +6,7 @@ ___
 
 This repo consists of my notes of algorithms and datastructures classes taught in University of Cyprus.
 
-The repo contains most, if not all content as taught in the classes along with accompanied code. For educational purposes, the code is written in python and/or C. Special cases and optimisations that are either not available in python or, are, to my knowledge impossible to implement, will be implemented only in C.
+The repo contains most, if not all content as taught in the classes along with accompanied code. For educational purposes, the code is written in python and/or C. Special cases and optimisations that are either not possible in python or make little sense to implement in Python, will be implemented C. It's expected that the reader is familiar with programming, and Object Oriented Programming and pointers.
 
 Example of this, is a double link linked list with only one (1) field for neighbouring elements.
 
