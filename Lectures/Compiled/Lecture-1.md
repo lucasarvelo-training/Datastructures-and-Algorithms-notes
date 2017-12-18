@@ -102,7 +102,7 @@ for i in range(n):
   
   
 |i | 0 | 1 | 2 | 3| ...| n-1|
-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
 |IL|0|1|4|9| ... | <img src="https://latex.codecogs.com/gif.latex?{(n-1)^2}"/>|
   
 Thus, this double loop has <img src="https://latex.codecogs.com/gif.latex?{&#x5C;Theta(n*(n^2+2+1))=&#x5C;Theta(N^3)}"/> time complexity.

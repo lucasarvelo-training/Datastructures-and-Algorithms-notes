@@ -95,7 +95,7 @@ for i in range(n):
 ##### Inner Loop
 
 |i | 0 | 1 | 2 | 3| ...| n-1|
-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|
 |IL|0|1|4|9| ... | ${(n-1)^2}$|
 
 Thus, this double loop has ${\Theta(n*(n^2+2+1))=\Theta(N^3)}$ time complexity.
