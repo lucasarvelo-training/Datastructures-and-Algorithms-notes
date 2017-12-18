@@ -1,5 +1,16 @@
 # Lecture 1
 
+___
+Contents:
+* [Complexity Analysis](#complexity-analysis)
+  * [Examples](#examples)
+* [Summary](#summarizing)
+* [Non algorithmic examples of Big-O-notation](#non-algorithmic-examples-of-big-o-notation)
+* [Properties of big O](#properties-of-big-o)
+* [Worst case](#worst-case)
+  * [Data Permutations](#data-permutations-and-worst-case-scenario)
+___
+
 ## Complexity Analysis
 
 Complexity analysis allows us to calculate mathematically properties of an algorithm relative to the volume of the data.
@@ -84,9 +95,9 @@ for (int index = 0;index < n; index++)
 
 | operation|Time Complexity |
 |--------|------------------|
-|```for (int index = 0; index < n; index++)```| $\Sigma_{i=1}^n 1 = O(n) $
+|```for (int index = 0; index < n; index++)```| $\Sigma_{i=1}^n 1 = O(n) $|
 
-Thus the algorithm is ${O(n)}$ and ${\Omega(n)}$ therefor, is also ${\Theta(n)}$.
+Thus the algorithm is $O(n)$ and $\Omega(n)$ therefor, is also $\Theta(n)$.
 
 Suppose, instead of a randomized loop, we had an ascending sorted list. Instead of iterating over the list in ${\Theta(n)}$ and getting the biggest element we can simply get the last element in ${\Theta(1)}$ as such.
 
@@ -97,6 +108,7 @@ Suppose, instead of a randomized loop, we had an ascending sorted list. Instead 
 Example 2:
 
 ```python
+sum = 0
 for i in range(n):
     for j in range(i*i):
         sum++
@@ -113,7 +125,7 @@ for i in range(n):
 |-|-|-|-|-|-|-|
 |IL|0|1|4|9| ... | ${(n-1)^2}$|
 
-Thus, this double loop has ${\Theta(n*(n^2+2+1))=\Theta(N^3)}$ time complexity.
+Thus, this double loop has ${\Theta(n*n^2)=\Theta(n^3)}$ time complexity.
 
 ## Summarizing
 
@@ -126,7 +138,7 @@ When we use big-O notation:
 
 ![Big-O-chart](../../images/big-O-chart.png)
 
-## Non algorithmic examples of Big-O-notation
+## Non algorithmic examples of Big O notation
 
 * ${7*n*lnn + n^2} = O(n^2)$
 * ${20*n^3 + nlogn + 5 + 23n^2} = O(n^3)$
