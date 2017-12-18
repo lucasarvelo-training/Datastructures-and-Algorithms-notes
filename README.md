@@ -19,7 +19,7 @@ Example of this, is a double link linked list with only one (1) field for neighb
 
 **Note :** The content and lectures above, are only those I have completed thus far. For a complete list of the content I am working on, checkout the [roadmap](#roadmap).
 
-## Notes style
+## Note style
 
 ### Code
 
