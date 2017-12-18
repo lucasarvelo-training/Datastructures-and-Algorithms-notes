@@ -163,7 +163,7 @@ The above algorithm is in the order of <img src="https://latex.codecogs.com/gif.
 ### Data permutations and worst case scenario
   
   
-Let <img src="https://latex.codecogs.com/gif.latex?D_n"/> the possible combinations of all elements, <img src="https://latex.codecogs.com/gif.latex?t(I)"/> the number of basic operations for every <img src="https://latex.codecogs.com/gif.latex?i%20&#x5C;in%20D_n"/>. Thus the runtime of worse case is equal  to <img src="https://latex.codecogs.com/gif.latex?max%20&#x5C;{%20t(I)%20|%20I%20&#x5C;in%20D_n&#x5C;}"/>.
+Let <img src="https://latex.codecogs.com/gif.latex?D_n"/> the possible combinations of all elements, <img src="https://latex.codecogs.com/gif.latex?t(I)"/> the number of basic operations for every <img src="https://latex.codecogs.com/gif.latex?i%20&#x5C;in%20D_n"/>. Thus the runtime of worse case is equal  to <img src="https://latex.codecogs.com/gif.latex?max%20&#x5C;(%20t(I)%20|%20I%20&#x5C;in%20D_n&#x5C;)"/>.
   
 When we evaluate an algorithm for it's worst case performance, we also have to consider the possible permutations of the data.
   
