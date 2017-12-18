@@ -157,4 +157,4 @@ Let $D_n$ the possible combinations of all elements, $t(I)$ the number of basic 
 
 When we evaluate an algorithm for it's worst case performance, we also have to consider the possible permutations of the data.
 
-For example, when an array is sorted, bubblesort runs in $O(n)$, when it's sorted in __reverse__, it runs in $O(n^2)$. Because we only consider the worst case, we see that time complexity of bubble sort is equal to $$max\{t_{sorted},t_{reverse}\}= t_{reverse} = O(n^2)$$
+For example, when an array is sorted, bubblesort runs in $O(n)$, when it's sorted in __reverse__, it runs in $O(n^2)$. Because we only consider the worst case, we see that time complexity of bubble sort is equal to $$max\(t_{sorted},t_{reverse}\)= t_{reverse} = O(n^2)$$
