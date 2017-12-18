@@ -43,17 +43,18 @@ And you are tasked to sort them.
 The simplest way to do this is by beginning from the start and go towards the end picking the biggest number we find and putting it in the end, the next number we find is put each time before the previous we placed.
   
 Bubblesort has <p align="center"><img src="https://latex.codecogs.com/gif.latex?{O(n^2)}"/></p>  
- time complexity. This means that at most, the algorithm has to make comparisons in the order of <img src="https://latex.codecogs.com/gif.latex?n^2"/> where <img src="https://latex.codecogs.com/gif.latex?n"/> is the amount of elements in the dataset.
+ time complexity. This means that at most, the algorithm has to make comparisons in the order of <p align="center"><img src="https://latex.codecogs.com/gif.latex?{n^2}"/></p>  
+ where _n_ is the amount of elements in the dataset.
   
 In this scenario, we have to do comparisons in the order of <p align="center"><img src="https://latex.codecogs.com/gif.latex?1,000,000%20^%202%20=%201,000,000,000,000%20=%2010^{12}%20=%201%20trillion"/></p>  
-.
+  
   
 A more efficient algorithm is mergesort. In mergesort, the array is split into smaller and smaller segments until segment of size 1. Then recursively merge the segments into bigger, sorted segments.
   
 Mergesort has <p align="center"><img src="https://latex.codecogs.com/gif.latex?{O(n%20&#x5C;times%20log_2n)}"/></p>  
  time complexity, thus, the worst case of mergesort in this scenario requires comparisons in the order of  
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?{1,000,000%20&#x5C;times%20log_21,000,000%20=%2010^6*19.931569%20=%2010^7*2}%20=%20200%20million"/></p>  
- .
+  
   
 An even faster way is using bucket sort. Bucketsort counts how many times each value is found within the array and then recreates the array sorted. 
   
