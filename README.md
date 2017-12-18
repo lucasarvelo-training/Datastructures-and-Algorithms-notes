@@ -43,10 +43,6 @@ All code will be marked \`\`\`Language ...code... \`\`\` when the lecture is rea
     ```
   * All C code is Compiled with ```gcc 7.2.0``` and flags ```-Wall -pedantic``` on ```Manjaro Linux```.
 
-### Notation | Pseudocode
-
-In many cases, there is no need to write actual code and simple peudocode or notation is preferred over code to keep things simple and language neutral. I will attempt to keep all examples as language neutral as I can unless I present specific scenarios where code implementation is necessary.
-
 ### Roadmap
 
 - [x] Write Lectures 0 - 3:
